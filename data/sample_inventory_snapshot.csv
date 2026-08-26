@@ -1,0 +1,121 @@
+product_id,item_code,product_name,category,sub_category,retail_price_sar,stock_qty,sales_90d_qty,sales_value_90d_sar,avg_daily_units,stock_cover_days,inventory_value_sar,expired_units,units_expiring_30d,nearest_expiry_date,dead_stock_flag,slow_moving_flag,reorder_candidate_flag,reorder_qty_30d
+1,SKU-10001,OTC Sample Product 001,OTC,Pain & Fever,80.12,275,332,26599.84,3.689,74.5,22033.0,0,275,2026-09-07,0,0,0,0
+2,SKU-10002,Vitamins & Wellness Sample Product 002,Vitamins & Wellness,Multivitamins,31.41,0,0,0.0,0.0,,0.0,0,0,,0,0,0,0
+3,SKU-10003,Personal Care Sample Product 003,Personal Care,Oral Care,24.47,25,0,0.0,0.0,,611.75,0,0,2027-02-16,1,0,0,0
+4,SKU-10004,Skin Care Sample Product 004,Skin Care,Moisturizers,12.85,0,0,0.0,0.0,,0.0,0,0,,0,0,0,0
+5,SKU-10005,Baby Care Sample Product 005,Baby Care,Nutrition,140.34,64,188,26383.92,2.089,30.6,8981.76,0,26,2026-09-03,0,0,0,0
+6,SKU-10006,Medical Supplies Sample Product 006,Medical Supplies,First Aid,26.61,18,0,0.0,0.0,,478.98,0,18,2026-09-16,1,0,0,0
+7,SKU-10007,OTC Sample Product 007,OTC,Cold & Allergy,126.0,43,311,39186.0,3.456,12.4,5418.0,0,30,2026-09-11,0,0,1,61
+8,SKU-10008,Vitamins & Wellness Sample Product 008,Vitamins & Wellness,Minerals,158.4,73,368,58291.2,4.089,17.9,11563.2,0,0,2027-05-16,0,0,0,0
+9,SKU-10009,Personal Care Sample Product 009,Personal Care,Hair Care,89.72,22,205,18392.6,2.278,9.7,1973.84,0,22,2026-09-06,0,0,1,47
+10,SKU-10010,Skin Care Sample Product 010,Skin Care,Cleansers,87.61,16,64,5607.04,0.711,22.5,1401.76,0,1,2026-09-20,0,0,0,0
+11,SKU-10011,Baby Care Sample Product 011,Baby Care,Diapers & Hygiene,148.44,10,65,9648.6,0.722,13.8,1484.4,0,0,2026-09-29,0,0,1,12
+12,SKU-10012,Medical Supplies Sample Product 012,Medical Supplies,Monitoring,135.4,22,26,3520.4,0.289,76.2,2978.8,0,22,2026-09-08,0,0,0,0
+13,SKU-10013,OTC Sample Product 013,OTC,Digestive Care,104.28,33,259,27008.52,2.878,11.5,3441.24,0,0,2026-10-11,0,0,1,54
+14,SKU-10014,Vitamins & Wellness Sample Product 014,Vitamins & Wellness,Wellness Support,116.41,16,113,13154.33,1.256,12.7,1862.56,0,0,2026-10-11,0,0,1,22
+15,SKU-10015,Personal Care Sample Product 015,Personal Care,Hygiene,79.51,10,33,2623.83,0.367,27.3,795.1,0,0,2026-10-28,0,0,0,0
+16,SKU-10016,Skin Care Sample Product 016,Skin Care,Sun Care,34.04,49,101,3438.04,1.122,43.7,1667.96,0,0,2027-07-26,0,0,0,0
+17,SKU-10017,Baby Care Sample Product 017,Baby Care,Accessories,33.41,39,110,3675.1,1.222,31.9,1302.99,0,0,2028-01-28,0,0,0,0
+18,SKU-10018,Medical Supplies Sample Product 018,Medical Supplies,Consumables,11.51,17,133,1530.83,1.478,11.5,195.67,0,0,2027-12-01,0,0,1,28
+19,SKU-10019,OTC Sample Product 019,OTC,Pain & Fever,46.47,18,97,4507.59,1.078,16.7,836.46,0,0,2027-07-01,0,0,0,0
+20,SKU-10020,Vitamins & Wellness Sample Product 020,Vitamins & Wellness,Multivitamins,86.27,12,101,8713.27,1.122,10.7,1035.24,0,1,2026-09-18,0,0,1,22
+21,SKU-10021,Personal Care Sample Product 021,Personal Care,Oral Care,51.47,102,201,10345.47,2.233,45.7,5249.94,0,0,2027-01-03,0,0,0,0
+22,SKU-10022,Skin Care Sample Product 022,Skin Care,Moisturizers,12.43,21,90,1118.7,1.0,21.0,261.03,0,0,2027-06-02,0,0,0,0
+23,SKU-10023,Baby Care Sample Product 023,Baby Care,Nutrition,60.83,11,130,7907.9,1.444,7.6,669.13,0,0,2027-02-18,0,0,1,33
+24,SKU-10024,Medical Supplies Sample Product 024,Medical Supplies,First Aid,111.71,28,51,5697.21,0.567,49.4,3127.88,0,1,2026-09-18,0,0,0,0
+25,SKU-10025,OTC Sample Product 025,OTC,Cold & Allergy,111.7,142,716,79977.2,7.956,17.8,15861.4,0,121,2026-08-27,0,0,0,0
+26,SKU-10026,Vitamins & Wellness Sample Product 026,Vitamins & Wellness,Minerals,45.28,106,123,5569.44,1.367,77.6,4799.68,0,0,2026-10-04,0,0,0,0
+27,SKU-10027,Personal Care Sample Product 027,Personal Care,Hair Care,55.26,4,0,0.0,0.0,,221.04,0,4,2026-09-10,1,0,0,0
+28,SKU-10028,Skin Care Sample Product 028,Skin Care,Cleansers,76.11,6,29,2207.19,0.322,18.6,456.66,0,0,2027-12-26,0,0,0,0
+29,SKU-10029,Baby Care Sample Product 029,Baby Care,Diapers & Hygiene,42.14,7,55,2317.7,0.611,11.5,294.98,0,0,2026-10-07,0,0,1,12
+30,SKU-10030,Medical Supplies Sample Product 030,Medical Supplies,Monitoring,38.58,13,54,2083.32,0.6,21.7,501.54,0,0,2026-11-03,0,0,0,0
+31,SKU-10031,OTC Sample Product 031,OTC,Digestive Care,89.18,56,113,10077.34,1.256,44.6,4994.08,0,0,2028-01-28,0,0,0,0
+32,SKU-10032,Vitamins & Wellness Sample Product 032,Vitamins & Wellness,Wellness Support,136.6,134,101,13796.6,1.122,119.4,18304.4,134,0,2026-08-13,0,0,0,0
+33,SKU-10033,Personal Care Sample Product 033,Personal Care,Hygiene,82.03,47,87,7136.61,0.967,48.6,3855.41,0,18,2026-09-23,0,0,0,0
+34,SKU-10034,Skin Care Sample Product 034,Skin Care,Sun Care,145.8,32,92,13413.6,1.022,31.3,4665.6,0,0,2027-11-08,0,0,0,0
+35,SKU-10035,Baby Care Sample Product 035,Baby Care,Accessories,24.28,553,414,10051.92,4.6,120.2,13426.84,0,0,2026-12-13,0,1,0,0
+36,SKU-10036,Medical Supplies Sample Product 036,Medical Supplies,Consumables,38.93,7,57,2219.01,0.633,11.1,272.51,0,0,2027-01-14,0,0,1,12
+37,SKU-10037,OTC Sample Product 037,OTC,Pain & Fever,125.41,16,131,16428.71,1.456,11.0,2006.56,0,13,2026-08-30,0,0,1,28
+38,SKU-10038,Vitamins & Wellness Sample Product 038,Vitamins & Wellness,Multivitamins,32.4,508,379,12279.6,4.211,120.6,16459.2,0,0,2026-10-09,0,1,0,0
+39,SKU-10039,Personal Care Sample Product 039,Personal Care,Oral Care,72.45,8,41,2970.45,0.456,17.6,579.6,0,8,2026-09-16,0,0,0,0
+40,SKU-10040,Skin Care Sample Product 040,Skin Care,Moisturizers,141.86,17,55,7802.3,0.611,27.8,2411.62,0,0,2026-09-30,0,0,0,0
+41,SKU-10041,Baby Care Sample Product 041,Baby Care,Nutrition,28.87,0,0,0.0,0.0,,0.0,0,0,,0,0,0,0
+42,SKU-10042,Medical Supplies Sample Product 042,Medical Supplies,First Aid,140.26,3,7,981.82,0.078,38.6,420.78,0,3,2026-09-15,0,0,0,0
+43,SKU-10043,OTC Sample Product 043,OTC,Cold & Allergy,68.86,290,345,23756.7,3.833,75.7,19969.4,0,80,2026-08-29,0,0,0,0
+44,SKU-10044,Vitamins & Wellness Sample Product 044,Vitamins & Wellness,Minerals,14.46,18,110,1590.6,1.222,14.7,260.28,0,2,2026-09-19,0,0,0,0
+45,SKU-10045,Personal Care Sample Product 045,Personal Care,Hair Care,9.74,0,0,0.0,0.0,,0.0,0,0,,0,0,0,0
+46,SKU-10046,Skin Care Sample Product 046,Skin Care,Cleansers,130.08,11,59,7674.72,0.656,16.8,1430.88,0,9,2026-09-19,0,0,0,0
+47,SKU-10047,Baby Care Sample Product 047,Baby Care,Diapers & Hygiene,97.24,101,202,19642.48,2.244,45.0,9821.24,59,42,2026-07-31,0,0,0,0
+48,SKU-10048,Medical Supplies Sample Product 048,Medical Supplies,Monitoring,140.65,184,139,19550.35,1.544,119.1,25879.6,0,70,2026-09-19,0,0,0,0
+49,SKU-10049,OTC Sample Product 049,OTC,Digestive Care,28.86,1666,832,24011.52,9.244,180.2,48080.76,0,0,2026-11-17,0,1,0,0
+50,SKU-10050,Vitamins & Wellness Sample Product 050,Vitamins & Wellness,Wellness Support,19.1,12,138,2635.8,1.533,7.8,229.2,0,0,2026-12-29,0,0,1,34
+51,SKU-10051,Personal Care Sample Product 051,Personal Care,Hygiene,95.4,45,87,8299.8,0.967,46.6,4293.0,0,0,2026-10-27,0,0,0,0
+52,SKU-10052,Skin Care Sample Product 052,Skin Care,Sun Care,131.26,96,295,38721.7,3.278,29.3,12600.96,0,16,2026-08-31,0,0,0,0
+53,SKU-10053,Baby Care Sample Product 053,Baby Care,Accessories,16.38,1,18,294.84,0.2,5.0,16.38,0,0,2027-10-12,0,0,1,5
+54,SKU-10054,Medical Supplies Sample Product 054,Medical Supplies,Consumables,93.85,49,61,5724.85,0.678,72.3,4598.65,0,0,2027-01-11,0,0,0,0
+55,SKU-10055,OTC Sample Product 055,OTC,Pain & Fever,105.59,7,75,7919.25,0.833,8.4,739.13,0,0,2026-10-29,0,0,1,18
+56,SKU-10056,Vitamins & Wellness Sample Product 056,Vitamins & Wellness,Multivitamins,76.7,18,0,0.0,0.0,,1380.6,0,0,2026-11-16,1,0,0,0
+57,SKU-10057,Personal Care Sample Product 057,Personal Care,Oral Care,130.62,151,111,14498.82,1.233,122.4,19723.62,0,0,2026-09-29,0,1,0,0
+58,SKU-10058,Skin Care Sample Product 058,Skin Care,Moisturizers,93.99,20,59,5545.41,0.656,30.5,1879.8,0,13,2026-09-11,0,0,0,0
+59,SKU-10059,Baby Care Sample Product 059,Baby Care,Nutrition,44.07,17,116,5112.12,1.289,13.2,749.19,0,4,2026-09-10,0,0,1,22
+60,SKU-10060,Medical Supplies Sample Product 060,Medical Supplies,First Aid,125.01,12,19,2375.19,0.211,56.8,1500.12,0,0,2026-11-29,0,0,0,0
+61,SKU-10061,OTC Sample Product 061,OTC,Cold & Allergy,126.52,438,220,27834.4,2.444,179.2,55415.76,0,0,2028-03-07,0,1,0,0
+62,SKU-10062,Vitamins & Wellness Sample Product 062,Vitamins & Wellness,Minerals,65.13,16,69,4493.97,0.767,20.9,1042.08,0,0,2027-02-02,0,0,0,0
+63,SKU-10063,Personal Care Sample Product 063,Personal Care,Hair Care,73.95,13,99,7321.05,1.1,11.8,961.35,0,0,2026-10-24,0,0,1,20
+64,SKU-10064,Skin Care Sample Product 064,Skin Care,Cleansers,37.17,485,243,9032.31,2.7,179.6,18027.45,0,0,2027-10-23,0,1,0,0
+65,SKU-10065,Baby Care Sample Product 065,Baby Care,Diapers & Hygiene,144.32,34,65,9380.8,0.722,47.1,4906.88,0,25,2026-09-17,0,0,0,0
+66,SKU-10066,Medical Supplies Sample Product 066,Medical Supplies,Monitoring,27.72,54,156,4324.32,1.733,31.2,1496.88,0,54,2026-09-24,0,0,0,0
+67,SKU-10067,OTC Sample Product 067,OTC,Digestive Care,29.55,386,460,13593.0,5.111,75.5,11406.3,0,0,2026-10-11,0,0,0,0
+68,SKU-10068,Vitamins & Wellness Sample Product 068,Vitamins & Wellness,Wellness Support,108.55,52,61,6621.55,0.678,76.7,5644.6,0,0,2026-10-23,0,0,0,0
+69,SKU-10069,Personal Care Sample Product 069,Personal Care,Hygiene,70.55,33,64,4515.2,0.711,46.4,2328.15,0,33,2026-09-18,0,0,0,0
+70,SKU-10070,Skin Care Sample Product 070,Skin Care,Sun Care,142.7,13,66,9418.2,0.733,17.7,1855.1,0,13,2026-09-21,0,0,0,0
+71,SKU-10071,Baby Care Sample Product 071,Baby Care,Accessories,95.85,16,71,6805.35,0.789,20.3,1533.6,0,0,2027-07-04,0,0,0,0
+72,SKU-10072,Medical Supplies Sample Product 072,Medical Supplies,Consumables,72.61,70,51,3703.11,0.567,123.5,5082.7,0,70,2026-08-30,0,1,0,0
+73,SKU-10073,OTC Sample Product 073,OTC,Pain & Fever,39.15,240,119,4658.85,1.322,181.5,9396.0,0,0,2026-11-09,0,1,0,0
+74,SKU-10074,Vitamins & Wellness Sample Product 074,Vitamins & Wellness,Multivitamins,103.26,189,94,9706.44,1.044,181.0,19516.14,0,0,2026-10-09,0,1,0,0
+75,SKU-10075,Personal Care Sample Product 075,Personal Care,Oral Care,49.42,28,51,2520.42,0.567,49.4,1383.76,0,0,2026-09-30,0,0,0,0
+76,SKU-10076,Skin Care Sample Product 076,Skin Care,Moisturizers,80.55,76,57,4591.35,0.633,120.0,6121.8,25,0,2026-08-06,0,0,0,0
+77,SKU-10077,Baby Care Sample Product 077,Baby Care,Nutrition,149.38,84,162,24199.56,1.8,46.7,12547.92,0,0,2028-02-10,0,0,0,0
+78,SKU-10078,Medical Supplies Sample Product 078,Medical Supplies,First Aid,126.39,23,68,8594.52,0.756,30.4,2906.97,0,0,2027-08-10,0,0,0,0
+79,SKU-10079,OTC Sample Product 079,OTC,Cold & Allergy,60.46,36,249,15054.54,2.767,13.0,2176.56,0,0,2026-10-05,0,0,1,47
+80,SKU-10080,Vitamins & Wellness Sample Product 080,Vitamins & Wellness,Minerals,42.23,13,121,5109.83,1.344,9.7,548.99,0,7,2026-09-09,0,0,1,28
+81,SKU-10081,Personal Care Sample Product 081,Personal Care,Hair Care,142.18,347,414,58862.52,4.6,75.4,49336.46,0,0,2026-10-13,0,0,0,0
+82,SKU-10082,Skin Care Sample Product 082,Skin Care,Cleansers,126.14,52,62,7820.68,0.689,75.5,6559.28,0,0,2026-10-22,0,0,0,0
+83,SKU-10083,Baby Care Sample Product 083,Baby Care,Diapers & Hygiene,120.91,52,253,30590.23,2.811,18.5,6287.32,0,0,2028-01-25,0,0,0,0
+84,SKU-10084,Medical Supplies Sample Product 084,Medical Supplies,Monitoring,39.26,158,78,3062.28,0.867,182.3,6203.08,55,0,2026-07-31,0,1,0,0
+85,SKU-10085,OTC Sample Product 085,OTC,Digestive Care,140.11,24,284,39791.24,3.156,7.6,3362.64,0,0,2026-10-10,0,0,1,71
+86,SKU-10086,Vitamins & Wellness Sample Product 086,Vitamins & Wellness,Wellness Support,90.62,7,61,5527.82,0.678,10.3,634.34,0,0,2026-11-06,0,0,1,14
+87,SKU-10087,Personal Care Sample Product 087,Personal Care,Hygiene,80.91,76,87,7039.17,0.967,78.6,6149.16,0,17,2026-09-06,0,0,0,0
+88,SKU-10088,Skin Care Sample Product 088,Skin Care,Sun Care,42.37,32,221,9363.77,2.456,13.0,1355.84,0,0,2026-11-28,0,0,1,42
+89,SKU-10089,Baby Care Sample Product 089,Baby Care,Accessories,89.12,130,99,8822.88,1.1,118.2,11585.6,0,0,2026-11-08,0,0,0,0
+90,SKU-10090,Medical Supplies Sample Product 090,Medical Supplies,Consumables,38.17,4,0,0.0,0.0,,152.68,0,4,2026-09-24,1,0,0,0
+91,SKU-10091,OTC Sample Product 091,OTC,Pain & Fever,110.96,0,0,0.0,0.0,,0.0,0,0,,0,0,0,0
+92,SKU-10092,Vitamins & Wellness Sample Product 092,Vitamins & Wellness,Multivitamins,81.41,86,410,33378.1,4.556,18.9,7001.26,0,0,2026-10-09,0,0,0,0
+93,SKU-10093,Personal Care Sample Product 093,Personal Care,Oral Care,10.75,35,65,698.75,0.722,48.5,376.25,0,0,2027-09-28,0,0,0,0
+94,SKU-10094,Skin Care Sample Product 094,Skin Care,Moisturizers,82.85,25,67,5550.95,0.744,33.6,2071.25,0,0,2027-03-23,0,0,0,0
+95,SKU-10095,Baby Care Sample Product 095,Baby Care,Nutrition,132.01,10,113,14917.13,1.256,8.0,1320.1,0,0,2028-06-05,0,0,1,28
+96,SKU-10096,Medical Supplies Sample Product 096,Medical Supplies,First Aid,41.54,95,193,8017.22,2.144,44.3,3946.3,0,0,2026-10-05,0,0,0,0
+97,SKU-10097,OTC Sample Product 097,OTC,Cold & Allergy,16.24,30,150,2436.0,1.667,18.0,487.2,0,0,2026-10-11,0,0,0,0
+98,SKU-10098,Vitamins & Wellness Sample Product 098,Vitamins & Wellness,Minerals,22.88,21,222,5079.36,2.467,8.5,480.48,0,0,2027-07-01,0,0,1,53
+99,SKU-10099,Personal Care Sample Product 099,Personal Care,Hair Care,157.68,15,47,7410.96,0.522,28.7,2365.2,0,0,2027-11-12,0,0,0,0
+100,SKU-10100,Skin Care Sample Product 100,Skin Care,Cleansers,30.99,62,76,2355.24,0.844,73.4,1921.38,0,0,2026-10-05,0,0,0,0
+101,SKU-10101,Baby Care Sample Product 101,Baby Care,Diapers & Hygiene,43.44,18,0,0.0,0.0,,781.92,0,0,2027-05-14,1,0,0,0
+102,SKU-10102,Medical Supplies Sample Product 102,Medical Supplies,Monitoring,54.75,120,87,4763.25,0.967,124.1,6570.0,0,0,2028-06-19,0,1,0,0
+103,SKU-10103,OTC Sample Product 103,OTC,Digestive Care,74.15,303,225,16683.75,2.5,121.2,22467.45,190,0,2026-07-30,0,1,0,0
+104,SKU-10104,Vitamins & Wellness Sample Product 104,Vitamins & Wellness,Wellness Support,29.7,26,131,3890.7,1.456,17.9,772.2,0,15,2026-08-27,0,0,0,0
+105,SKU-10105,Personal Care Sample Product 105,Personal Care,Hygiene,71.52,188,141,10084.32,1.567,120.0,13445.76,0,0,2027-05-06,0,0,0,0
+106,SKU-10106,Skin Care Sample Product 106,Skin Care,Sun Care,29.1,12,0,0.0,0.0,,349.2,0,9,2026-08-29,1,0,0,0
+107,SKU-10107,Baby Care Sample Product 107,Baby Care,Accessories,22.41,0,0,0.0,0.0,,0.0,0,0,,0,0,0,0
+108,SKU-10108,Medical Supplies Sample Product 108,Medical Supplies,Consumables,103.0,37,19,1957.0,0.211,175.3,3811.0,1,0,2026-07-28,0,1,0,0
+109,SKU-10109,OTC Sample Product 109,OTC,Pain & Fever,18.05,33,237,4277.85,2.633,12.5,595.65,0,0,2027-02-13,0,0,1,46
+110,SKU-10110,Vitamins & Wellness Sample Product 110,Vitamins & Wellness,Multivitamins,44.78,63,47,2104.66,0.522,120.6,2821.14,0,0,2027-10-23,0,1,0,0
+111,SKU-10111,Personal Care Sample Product 111,Personal Care,Oral Care,35.82,164,488,17480.16,5.422,30.2,5874.48,0,0,2026-09-29,0,0,0,0
+112,SKU-10112,Skin Care Sample Product 112,Skin Care,Moisturizers,16.0,45,126,2016.0,1.4,32.1,720.0,0,0,2026-10-18,0,0,0,0
+113,SKU-10113,Baby Care Sample Product 113,Baby Care,Nutrition,41.28,35,63,2600.64,0.7,50.0,1444.8,0,0,2027-11-06,0,0,0,0
+114,SKU-10114,Medical Supplies Sample Product 114,Medical Supplies,First Aid,33.84,4,25,846.0,0.278,14.4,135.36,0,0,2027-05-22,0,0,0,0
+115,SKU-10115,OTC Sample Product 115,OTC,Cold & Allergy,141.0,493,369,52029.0,4.1,120.2,69513.0,0,0,2027-11-12,0,1,0,0
+116,SKU-10116,Vitamins & Wellness Sample Product 116,Vitamins & Wellness,Minerals,30.39,54,591,17960.49,6.567,8.2,1641.06,8,0,2026-08-19,0,0,1,143
+117,SKU-10117,Personal Care Sample Product 117,Personal Care,Hair Care,19.43,191,94,1826.42,1.044,182.9,3711.13,0,0,2026-11-29,0,1,0,0
+118,SKU-10118,Skin Care Sample Product 118,Skin Care,Cleansers,129.82,25,0,0.0,0.0,,3245.5,0,0,2027-09-09,1,0,0,0
+119,SKU-10119,Baby Care Sample Product 119,Baby Care,Diapers & Hygiene,143.53,23,148,21242.44,1.644,14.0,3301.19,0,0,2026-10-17,0,0,1,27
+120,SKU-10120,Medical Supplies Sample Product 120,Medical Supplies,Monitoring,117.08,7,0,0.0,0.0,,819.56,0,4,2026-09-19,1,0,0,0
