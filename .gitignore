@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local/private data
+*.xlsx
+*.xls
+.env
+.env.*
+secrets.*
+private_data/
+raw_data/
+
+# Local servers / generated temp
+*.log
+.tmp/
+tmp/
