@@ -6,6 +6,18 @@ A recruiter-friendly **Data Analyst / Business Analyst portfolio project** that 
 
 ![Dashboard overview](screenshots/dashboard-overview.png)
 
+## Featured Portfolio
+
+**Khaled Zidan — Healthcare & Business Data Analytics**
+
+[Saudi Healthcare Analytics](https://github.com/khaledzidan203-stack/saudi-healthcare-analytics) ·
+[Hospital360](https://github.com/khaledzidan203-stack/Hospital360) ·
+[Online Retail Growth & Customer Intelligence](https://github.com/khaledzidan203-stack/online-retail-growth-customer-intelligence) ·
+[Pharmacy Category Management](https://github.com/khaledzidan203-stack/pharmacy-category-management) ·
+[Regional Sales Performance](https://github.com/khaledzidan203-stack/regional-sales-analytics-portfolio)
+
+**Core stack:** Power BI · SQL · Python · DAX · Analytics Engineering · Healthcare / Pharmacy / Retail Analytics
+
 ## Executive summary
 
 This project converts a common retail-pharmacy inventory problem into a reproducible analytics workflow. It joins product metadata, 90 days of sales activity, and batch-level stock/expiry records; calculates operational KPIs; classifies inventory risks; and presents the results in a lightweight interactive HTML dashboard. SQL examples and a Power BI implementation guide are included so the same analytical logic can be discussed across multiple analytics tools.
