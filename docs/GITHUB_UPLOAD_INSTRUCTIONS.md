@@ -1,54 +1,41 @@
-# GitHub Upload Instructions
+# Repository Setup and Publication
 
-## Option 1 — Git command line
+This repository is already configured for GitHub-based validation and static dashboard deployment.
 
-1. Create a new empty GitHub repository, for example `pharmacy-stock-analytics-portfolio`.
-2. Do **not** add a README, `.gitignore`, or license on GitHub because they already exist locally.
-3. From the project folder run:
+## Local validation
 
-```bash
-git init
-git add .
-git status
-git commit -m "Initial portfolio release: pharmacy inventory analytics"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/pharmacy-stock-analytics-portfolio.git
-git push -u origin main
-```
-
-## Option 2 — GitHub web upload
-
-1. Create a new empty repository.
-2. Open **Add file → Upload files**.
-3. Drag the **contents** of the unzipped project folder into the upload area.
-4. Confirm that `.github`, `data`, `docs`, `src`, `sql`, `scripts`, `examples`, `screenshots`, and `tests` are included.
-5. Commit the files to `main`.
-
-## Enable GitHub Pages
-
-The repository includes an optional GitHub Actions Pages workflow.
-
-1. Open **Settings → Pages**.
-2. Under **Build and deployment**, choose **GitHub Actions**.
-3. Open the **Actions** tab.
-4. Select **Deploy Dashboard to GitHub Pages** and click **Run workflow**.
-5. Confirm the workflow completes successfully.
-6. GitHub will show the published site URL in the deployment result.
-
-If you do not want to publish a live dashboard, disable or remove `.github/workflows/deploy-pages.yml`.
-
-## Final check before publication
-
-Run locally:
+Before pushing changes, run:
 
 ```bash
 python scripts/validate_repository.py
+python scripts/check_reproducibility.py
+python -m pytest -q
+node --check src/js/app.js
 ```
 
-Then review:
+## GitHub Pages
 
-```bash
-git diff --cached
-```
+The repository includes:
 
-Never upload a private/raw data export to the public repository.
+`.github/workflows/deploy-pages.yml`
+
+The workflow deploys the static dashboard from the repository to GitHub Pages.
+
+If Pages is not already enabled:
+
+1. Open **Settings → Pages**.
+2. Under **Build and deployment**, select **GitHub Actions**.
+3. Push to `main` or run the deployment workflow manually.
+4. Confirm the deployment job succeeds.
+
+## Publication safety
+
+Before every public release:
+
+- keep data synthetic;
+- do not add production exports;
+- do not add credentials or internal infrastructure details;
+- review staged changes;
+- confirm analytical and reproducibility tests pass.
+
+The repository name contains `portfolio` for continuity, but project documentation presents the implementation as an independent analytical system rather than recruitment material.
