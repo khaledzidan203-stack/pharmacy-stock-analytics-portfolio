@@ -4,19 +4,21 @@
 
 1. Start a local HTTP server in the repository root.
 2. Open the dashboard.
-3. Select a category and optional subcategory.
-4. Use **Stock view** to focus on a specific operational queue.
+3. Select a Category and optional Subcategory.
+4. Use **Stock View** to focus on Reorder, Expiry, Dead Stock or Slow Moving.
 5. Review KPI changes after each filter.
-6. Use the lower tables to identify candidate SKUs.
+6. Use the action tables to identify synthetic candidate SKUs for review.
 
 ## Analyst workflow
 
-- Start with data-quality checks.
-- Review inventory value and risk concentration by category.
-- Review low-cover candidates for replenishment analysis.
-- Review expiry and dead-stock candidates for stock reduction / operational action.
-- Validate any automated recommendation against business context before execution.
+- Start with data-quality validation.
+- Review stock units and inventory retail-value concentration.
+- Review recent sales and stock cover.
+- Review low-cover candidates.
+- Review expiry exposure.
+- Review dead-stock and slow-moving candidates separately.
+- Validate any suggested action against business context before execution.
 
-## Important
+## Important boundary
 
-The dashboard is a portfolio demonstration. Its thresholds and suggested quantities are not operational instructions for any real pharmacy.
+Thresholds and suggested quantities are synthetic decision-support assumptions. They are not operational instructions for a real pharmacy or automatic purchase recommendations.
