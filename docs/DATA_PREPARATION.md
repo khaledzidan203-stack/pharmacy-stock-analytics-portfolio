@@ -2,30 +2,35 @@
 
 ## Required inputs
 
-1. Product master with unique SKU, category, subcategory, and price.
-2. Recent sales with date, SKU, and quantity.
-3. Stock-batch data with SKU, expiry date, and stock quantity.
+1. Product master with unique SKU, category, subcategory and price.
+2. Recent sales with date, SKU and quantity.
+3. Stock-batch data with SKU, expiry date and stock quantity.
 
 ## Preparation steps
 
-1. Trim and standardize SKU identifiers.
+1. Standardize SKU identifiers.
 2. Enforce a unique product key in the product master.
-3. Parse dates using an unambiguous ISO format (`YYYY-MM-DD`) in the public sample.
-4. Reject or flag negative stock quantity and impossible sales quantities unless returns are explicitly modeled.
-5. Verify all sales and stock SKUs exist in the product master.
-6. Aggregate sales to 90-day SKU totals and calculate average daily demand.
-7. Aggregate batch stock to current SKU stock.
-8. Calculate expiry exposure from batch dates relative to the analysis date.
-9. Join the aggregates at SKU grain.
-10. Calculate coverage, inventory value, dead/slow/reorder flags, and demonstration reorder quantity.
+3. Parse dates using ISO format `YYYY-MM-DD`.
+4. Reject negative stock and sales quantities.
+5. Verify all sales and stock product references exist.
+6. Aggregate daily sales to 90-day SKU totals.
+7. Calculate average daily units.
+8. Aggregate stock batches to current SKU stock.
+9. Calculate expired and next-30-day exposure relative to the analysis date.
+10. Preserve nearest batch expiry.
+11. Join sales and stock aggregates at SKU grain.
+12. Calculate cover, retail-value proxy and risk flags.
+13. Calculate the simplified 30-day reorder quantity.
+14. Run repository and regression validation.
 
 ## Reproducibility
+
+The generator uses fixed random seed `20260826`.
 
 Run:
 
 ```bash
-python scripts/generate_sample_data.py
-python scripts/validate_repository.py
+python scripts/check_reproducibility.py
 ```
 
-The generated data is deterministic and does not require access to any private source file.
+The check regenerates all four public CSVs and verifies that they match the committed versions byte-for-byte.
