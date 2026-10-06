@@ -2,39 +2,43 @@
 
 This directory contains presentation-only visual assets for the Pharmacy Inventory & Expiry Analytics project.
 
-## Intended use
+## Current overview
 
-The primary overview image stored here is used by the repository README to summarize the analytical workflow at a glance.
+`Pharmacy Stock Analytics Dashboard.png`
 
-Recommended filename:
+The repository README uses this image as a high-level presentation schematic.
 
-`pharmacy_inventory_expiry_analytics_overview.png`
+## Evidence-supported scope
 
-The overview should represent only repository-supported claims, including:
+The implemented repository supports:
 
-- deterministic synthetic data generated with seed `20260826`;
-- 120 synthetic SKUs;
-- 10,800 daily sales rows covering a 90-day window;
+- 120 deterministic synthetic SKUs;
+- 10,800 daily sales rows across a 90-day window;
 - 231 synthetic stock batches;
-- SKU-level analytical snapshot;
-- Stock Units and Inventory Retail Value;
-- 90-Day Sales Units and Sales Value;
-- Stock Cover Days;
-- Expired Units and Units Expiring Within 30 Days;
-- Dead Stock, Slow Moving, and Reorder Candidate flags;
-- simplified 30-day replenishment quantity;
-- Category and Subcategory filtering;
-- action-oriented reorder and expiry/dead-stock tables;
+- 10,682 stock units;
+- SAR 737,970.61 inventory retail-value proxy;
+- 16,337 90-day sales units;
+- SAR 1,245,983.10 90-day sales value;
+- 472 expired units;
+- 1,050 units expiring within 30 days;
+- 9 dead-stock SKUs;
+- 16 slow-moving SKUs;
+- 26 reorder candidates;
+- 929 simplified suggested replenishment units;
 - HTML/CSS/Vanilla JavaScript dashboard;
-- Python synthetic-data generation and validation;
-- SQLite-compatible schema, KPI queries, inventory-risk queries, and data-quality checks;
-- Power BI implementation guide/design blueprint only;
-- GitHub Actions quality checks and GitHub Pages deployment.
+- deterministic Python data generation and validation;
+- SQLite-compatible analytical SQL;
+- GitHub Pages deployment;
+- Power BI design guidance.
 
 ## Evidence boundary
 
-Assets in this directory are presentation summaries only. They are not source data, runtime validation evidence, SQLite execution evidence, Power BI runtime evidence, or proof of any real pharmacy operation.
+The infographic is a **presentation schematic**, not a literal screenshot of the implemented dashboard.
 
-Authoritative claims remain defined by the committed synthetic CSV files, generator, validator, HTML/JavaScript implementation, SQL scripts, automated tests, documentation, screenshots, and GitHub Actions workflows.
+The authoritative implemented dashboard is `index.html` + `src/`, with retained runtime evidence at `screenshots/dashboard-overview.png`.
 
-Inventory Retail Value is a retail-price proxy, not an accounting cost valuation. Reorder logic is a simplified analytical assumption and not a production replenishment policy.
+Any illustrative category labels, product names, visual widgets, spreadsheet iconography or layout concepts shown in the infographic that are not present in the committed repository should be treated as conceptual only.
+
+The repository does **not** contain an Excel analytical workbook and does **not** contain a Power BI runtime file.
+
+Inventory Retail Value is based on synthetic retail price and is not an accounting-cost valuation. Reorder quantities are simplified decision-support outputs, not production purchase orders.
