@@ -1,4 +1,6 @@
-# Power BI Implementation Guide
+# Power BI Implementation Blueprint
+
+> **Implementation status — design guidance only.** The repository does not contain a PBIP, PBIR, TMDL, PBIX or PBIT runtime artifact.
 
 ## Recommended tables
 
@@ -65,32 +67,20 @@ CALCULATE (
 
 ## Suggested report pages
 
-### 1. Executive Inventory Health
-- KPI cards
-- Category inventory value
-- Risk classification
-- sales trend
-
-### 2. Replenishment Review
-- low-cover SKU table
-- stock cover distribution
-- recent sales trend
-
-### 3. Expiry & Slow Moving
-- expired / short-dated units
-- dead stock value
-- slow-moving table
-- category exposure
-
-### 4. Data Quality
-- orphan product references
-- duplicate keys
-- negative or missing values
-- reconciliation checks
+1. Executive Inventory Health
+2. Replenishment Review
+3. Expiry & Slow Moving
+4. Category Exposure
+5. Data Quality
 
 ## Recommended UX
 
-- Use slicers for category, subcategory, and date.
-- Keep status colors semantic and consistent.
-- Add drill-through from category views to SKU details.
-- Put threshold assumptions in an information tooltip or dedicated methodology page.
+- Slicers for Category, Subcategory and date.
+- Clear distinction between Expiry, Dead Stock, Slow Moving and Reorder.
+- Drill-through from Category to SKU.
+- Methodology page showing the 14 / 30 / 120-day assumptions.
+- Explicit retail-value proxy label.
+
+## Evidence boundary
+
+These DAX and modeling notes have not been executed in a committed Power BI runtime file. The implemented reporting artifact is the HTML/CSS/JavaScript dashboard.
