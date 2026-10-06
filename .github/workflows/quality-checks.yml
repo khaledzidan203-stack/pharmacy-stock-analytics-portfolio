@@ -1,15 +1,51 @@
 name: Quality Checks
+
 on:
   push:
   pull_request:
+
+permissions:
+  contents: read
+
 jobs:
   validate:
+    name: Pharmacy inventory analytical quality gate
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python scripts/validate_repository.py
-      - run: python -m pip install -r requirements.txt
-      - run: python -m pytest -q
+          cache: pip
+
+      - name: Install test dependency
+        run: python -m pip install -r requirements.txt
+
+      - name: Validate repository contract
+        run: python scripts/validate_repository.py
+
+      - name: Verify deterministic regeneration
+        run: python scripts/check_reproducibility.py
+
+      - name: Run analytical regression tests
+        run: python -m pytest -q
+
+      - name: Compile Python sources
+        run: |
+          python -m py_compile scripts/generate_sample_data.py
+          python -m py_compile scripts/validate_repository.py
+          python -m py_compile scripts/check_reproducibility.py
+          python -m py_compile tests/test_sample_data.py
+          python -m py_compile tests/test_inventory_baseline.py
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Validate JavaScript syntax
+        run: node --check src/js/app.js
