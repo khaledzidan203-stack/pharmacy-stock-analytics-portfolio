@@ -1,37 +1,72 @@
 # Repository Verification
 
-Verification completed for the public portfolio release on 2026-08-26.
+## Current validation contract
 
-## Functional checks
+The repository is validated through GitHub Actions and can also be checked locally with:
 
-- Synthetic-data generator: PASS
-- Data-validation script: PASS
-- Python syntax compilation: PASS
-- Automated tests: PASS (4 tests)
-- JavaScript syntax check: PASS
-- Local HTTP access to dashboard and CSV data: PASS
-- SQLite-compatible schema and analytical SQL queries: PASS
-- Synthetic generator reproducibility check: PASS
+```bash
+python scripts/validate_repository.py
+python scripts/check_reproducibility.py
+python -m pytest -q
+node --check src/js/app.js
+```
 
-## Data checks
+## Analytical checks
 
-- 120 synthetic product records
-- 10,800 synthetic daily sales rows covering 90 days
-- 231 synthetic stock-batch rows
-- One derived inventory snapshot row per synthetic product
-- Product keys unique
-- No orphan sales or stock product references
-- No negative sales or stock quantities
+The current release verifies:
+
+- 120 synthetic products;
+- 10,800 daily sales rows;
+- 231 stock batches;
+- exactly 90 sales dates;
+- one SKU-level snapshot row per product;
+- unique product and item-code keys;
+- no orphan sales or stock references;
+- no negative sales or stock quantities;
+- Sales Value formula;
+- Average Daily Units;
+- Stock Cover;
+- Inventory Retail Value;
+- expired-unit logic;
+- next-30-day expiry logic;
+- nearest expiry;
+- Dead Stock flag;
+- Slow Moving flag;
+- Reorder Candidate flag;
+- simplified 30-day reorder quantity;
+- aggregate KPI baselines;
+- risk-overlap baselines;
+- deterministic byte-for-byte regeneration.
+
+## Current baseline
+
+- Stocked SKUs: 114
+- Stock Units: 10,682
+- Inventory Retail Value: SAR 737,970.61
+- 90-Day Sales Units: 16,337
+- 90-Day Sales Value: SAR 1,245,983.10
+- Expired Units: 472
+- Expiring ≤30d: 1,050
+- Dead Stock: 9 SKUs
+- Slow Moving: 16 SKUs
+- Reorder Candidates: 26 SKUs
+- Suggested Replenishment: 929 units
 
 ## Confidentiality checks
 
-- Original spreadsheet files are not included in the repository.
-- No operational rows from source spreadsheets were copied into public datasets.
-- Public product names, SKU codes, prices, quantities, sales, and expiry dates are synthetic.
-- Organization-specific business rules were replaced with documented portfolio assumptions.
-- Repository text/CSV files were scanned for common secret, credential, identifier, and PII patterns.
-- An additional source-content leakage check found no matches for sampled source-only identifiers/content.
+- No production spreadsheet or source export is required.
+- Product names, SKU codes, prices, quantities, sales and expiry dates are synthetic.
+- Common secret, credential, network and PII-like patterns are scanned in public text files.
+- Analytical thresholds are explicitly synthetic assumptions.
 
-## Publication status
+## Tool boundaries
 
-The repository is suitable for public portfolio publication based on the checks above. As a standard Git practice, the staged diff should still be reviewed before every future push.
+- Browser dashboard: implemented.
+- SQLite-compatible SQL: committed source.
+- GitHub Pages workflow: implemented.
+- Power BI: design guidance only.
+- Excel analytical workbook: not part of this repository.
+
+## Interpretation
+
+A passing validation establishes consistency with the committed synthetic analytical contract. It does not establish production readiness or approval of real-world replenishment policy.
