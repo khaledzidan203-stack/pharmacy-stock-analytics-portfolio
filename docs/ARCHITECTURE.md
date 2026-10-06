@@ -1,30 +1,36 @@
 # Architecture
 
-## Public portfolio architecture
+## Implemented analytical architecture
 
 ```mermaid
 flowchart LR
-    A[Python synthetic-data generator] --> B[Product CSV]
-    A --> C[90-day Sales CSV]
+    A[Deterministic Python Generator] --> B[Product Master CSV]
+    A --> C[90-Day Daily Sales CSV]
     A --> D[Stock Batch CSV]
-    B --> E[Derived Inventory Snapshot]
+    B --> E[SKU-Level Inventory Snapshot]
     C --> E
     D --> E
-    E --> F[HTML / JavaScript Dashboard]
+    E --> F[HTML / CSS / Vanilla JavaScript Dashboard]
     C --> F
-    B --> G[SQL / Power BI implementation docs]
+    B --> G[SQLite-Compatible Analytical SQL]
     C --> G
     D --> G
+    B --> H[Power BI Design Blueprint]
+    C --> H
+    D --> H
 ```
 
 ## Design choices
 
-- **Static front end:** easy for recruiters to run and deploy on GitHub Pages.
-- **CSV sample layer:** transparent, reviewable, and tool-neutral.
-- **Normalized base datasets:** demonstrate sound modeling rather than only a flat report export.
-- **Derived snapshot:** makes the dashboard simple while preserving traceability to base facts.
-- **No secrets/back end:** minimizes security and setup risk for a public portfolio.
+- **Normalized analytical inputs:** product, daily sales and stock-batch grains remain distinct.
+- **Controlled aggregation:** sales and stock facts are aggregated before joining at SKU grain, avoiding many-to-many multiplication.
+- **Derived snapshot:** a reproducible SKU-level decision table simplifies browser analytics while retaining traceability to source facts.
+- **Static front end:** HTML/CSS/Vanilla JavaScript runs without a back-end service.
+- **CSV source layer:** transparent, portable and easy to validate.
+- **SQLite-compatible SQL:** schema and analytical queries provide a relational translation of the same business logic.
+- **Power BI blueprint:** documented model/measures only; no runtime Power BI artifact is committed.
+- **No secrets or production sources:** the public implementation uses synthetic files only.
 
 ## Production extension
 
-A production implementation could replace CSV sources with governed database views, scheduled ETL/ELT, row-level security, business-owned threshold tables, and monitored refresh pipelines.
+A larger implementation could replace CSVs with governed database views and scheduled pipelines, add branch/location inventory, cost valuation, supplier lead time, open purchase orders, threshold tables, row-level security and monitored refresh.
