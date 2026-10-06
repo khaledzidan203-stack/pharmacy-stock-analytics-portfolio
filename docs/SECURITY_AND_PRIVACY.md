@@ -2,7 +2,7 @@
 
 ## Public-repository policy
 
-This repository is designed to be safe for public portfolio use.
+This repository is designed around synthetic, non-production data.
 
 ### Never commit
 
@@ -10,26 +10,29 @@ This repository is designed to be safe for public portfolio use.
 - Prescription information
 - National IDs or other government identifiers
 - Employee information
-- Passwords, tokens, API keys, certificates, or secret files
+- Passwords, tokens, API keys, certificates or secret files
 - Database connection strings
-- Internal server names, IP addresses, or private URLs
+- Internal server names, IP addresses or private URLs
 - Real commercial contracts or confidential business rules
 - Proprietary operational datasets
-- Raw Excel exports from production systems
+- Raw production spreadsheets or exports
 
 ## Controls included
 
 - `.gitignore` excludes common spreadsheet/private-data paths and environment files.
-- `scripts/validate_repository.py` scans public text/CSV files for common secret and PII patterns.
+- `scripts/validate_repository.py` scans public text/CSV files for common secret and PII-like patterns.
 - Synthetic data uses generic SKU codes and product names.
-- Organization-specific thresholds are generalized as portfolio assumptions.
+- Deterministic regeneration verifies public-source provenance.
+- Analytical thresholds are explicitly documented as synthetic assumptions.
 
 ## Publication checklist
 
-Before pushing a new version:
+Before release:
 
 ```bash
 python scripts/validate_repository.py
+python scripts/check_reproducibility.py
+python -m pytest -q
 ```
 
-Also manually review `git diff --staged` before each commit.
+Then review the staged diff manually.
